@@ -5,6 +5,7 @@ const scaffold = require('./commands/scaffold');
 const health = require('./commands/health');
 const ports = require('./commands/ports');
 const jsonFmt = require('./commands/json-fmt');
+const loc = require('./commands/loc');
 
 const COMMANDS = {
   'git-stats': { fn: gitStats, desc: 'Show git contribution stats for current repo' },
@@ -12,6 +13,7 @@ const COMMANDS = {
   'health':    { fn: health,    desc: 'Run a code health check on a directory' },
   'ports':     { fn: ports,     desc: 'List ports currently in use' },
   'json-fmt':  { fn: jsonFmt,   desc: 'Pretty-print and validate a JSON file' },
+  'loc':       { fn: loc,       desc: 'Count lines of code by language' },
 };
 
 function showHelp() {
