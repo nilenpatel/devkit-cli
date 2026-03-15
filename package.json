@@ -1,0 +1,27 @@
+{
+  "name": "devkit-cli",
+  "version": "1.0.0",
+  "description": "A developer productivity CLI — git stats, project scaffolding, code health checks, and more.",
+  "main": "src/index.js",
+  "bin": {
+    "devkit": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test src/tests/",
+    "lint": "node src/lint-check.js"
+  },
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "productivity",
+    "git-stats",
+    "scaffolding"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
