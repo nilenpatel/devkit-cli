@@ -6,6 +6,14 @@ const health = require('./commands/health');
 const ports = require('./commands/ports');
 const jsonFmt = require('./commands/json-fmt');
 const loc = require('./commands/loc');
+const uuid = require('./commands/uuid');
+const password = require('./commands/password');
+const hash = require('./commands/hash');
+const b64 = require('./commands/b64');
+const envInfo = require('./commands/env-info');
+const timer = require('./commands/timer');
+const ip = require('./commands/ip');
+const color = require('./commands/color');
 
 const COMMANDS = {
   'git-stats': { fn: gitStats, desc: 'Show git contribution stats for current repo' },
@@ -14,6 +22,14 @@ const COMMANDS = {
   'ports':     { fn: ports,     desc: 'List ports currently in use' },
   'json-fmt':  { fn: jsonFmt,   desc: 'Pretty-print and validate a JSON file' },
   'loc':       { fn: loc,       desc: 'Count lines of code by language' },
+  'uuid':      { fn: uuid,      desc: 'Generate random UUIDs (--count N)' },
+  'password':  { fn: password,  desc: 'Generate secure random passwords' },
+  'hash':      { fn: hash,      desc: 'Compute SHA256/MD5/SHA512 hash of a file' },
+  'b64':       { fn: b64,       desc: 'Base64 encode/decode text or files' },
+  'env':       { fn: envInfo,   desc: 'Show system and dev environment info' },
+  'timer':     { fn: timer,     desc: 'Countdown timer in terminal' },
+  'ip':        { fn: ip,        desc: 'Show local and public IP addresses' },
+  'color':     { fn: color,     desc: 'Preview a hex color with RGB/HSL info' },
 };
 
 function showHelp() {
