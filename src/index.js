@@ -14,6 +14,7 @@ const envInfo = require('./commands/env-info');
 const timer = require('./commands/timer');
 const ip = require('./commands/ip');
 const color = require('./commands/color');
+const csv = require('./commands/csv');
 const gitignore = require('./commands/gitignore');
 const serve = require('./commands/serve');
 const size = require('./commands/size');
@@ -33,6 +34,7 @@ const COMMANDS = {
   'timer':     { fn: timer,     desc: 'Countdown timer in terminal' },
   'ip':        { fn: ip,        desc: 'Show local and public IP addresses' },
   'color':     { fn: color,     desc: 'Preview a hex color with RGB/HSL info' },
+  'csv':       { fn: csv,       desc: 'Pretty-print CSV files as tables' },
   'gitignore':  { fn: gitignore,  desc: 'Generate .gitignore from language templates' },
   'serve':     { fn: serve,     desc: 'Simple local HTTP file server' },
   'size':      { fn: size,      desc: 'Show directory size breakdown by file type' },
