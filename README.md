@@ -55,3 +55,28 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) before
 ## License
 
 MIT
+
+## All Commands
+
+| Command | Description |
+|---------|-------------|
+| `git-stats` | Show git contribution stats |
+| `scaffold` | Scaffold a new project |
+| `health` | Code health check |
+| `ports` | List active ports |
+| `json-fmt` | Format JSON files |
+| `loc` | Count lines of code |
+| `uuid` | Generate UUIDs |
+| `password` | Generate passwords |
+| `hash` | Compute file hashes |
+| `b64` | Base64 encode/decode |
+| `env` | System environment info |
+| `timer` | Countdown timer |
+| `ip` | Show IP addresses |
+| `color` | Preview hex colors |
+| `size` | Directory size breakdown |
+| `serve` | Local HTTP server |
+| `gitignore` | Generate .gitignore |
+| `csv` | Pretty-print CSV |
+| `diff` | File comparison |
+| `weather` | Check weather |
